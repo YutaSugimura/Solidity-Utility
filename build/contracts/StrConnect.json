@@ -1,11 +1,11 @@
 {
   "contractName": "StrConnect",
   "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820c4c56dcf05ccfdfcb8f70c43cee3aac16709878583af41eaae15492233c637ce0029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820c4c56dcf05ccfdfcb8f70c43cee3aac16709878583af41eaae15492233c637ce0029",
-  "sourceMap": "25:1382:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:1382:0;;;;;;;",
-  "deployedSourceMap": "25:1382:0:-;;;;;",
-  "source": "pragma solidity ^0.5.0;\n\ncontract StrConnect {\n\n  function twoStrConnect(string memory _str1, string memory _str2) internal view returns(string memory){\n    string memory str1 = _str1;\n    string memory str2 = _str2;\n    bytes memory strbyte1 = bytes(str1);\n    bytes memory strbyte2 = bytes(str2);\n\n    bytes memory str = new bytes(strbyte1.length + strbyte2.length);\n\n    uint8 point = 0;\n    for(uint8 j = 0; j < strbyte1.length;j++){\n      str[point] = strbyte1[j];\n      point++;\n    }\n    for(uint8 k = 0; k < strbyte2.length;k++){\n      str[point] = strbyte2[k];\n      point++;\n    }\n    return string(str);\n  }\n\n  function threeStrConnect(string memory _str1, string memory _str2, string memory _str3) internal view returns(string memory) {\n    string memory str1 = _str1;\n    string memory str2 = _str2;\n    string memory str3 = _str3;\n    bytes memory strbyte1 = bytes(str1);\n    bytes memory strbyte2 = bytes(str2);\n    bytes memory strbyte3 = bytes(str3);\n\n    bytes memory str = new bytes(strbyte1.length + strbyte2.length + strbyte3.length);\n\n    uint8 point = 0;\n    for(uint8 j = 0; j < strbyte1.length;j++){\n      str[point] = strbyte1[j];\n      point++;\n    }\n    for(uint8 k = 0; k < strbyte2.length;k++){\n      str[point] = strbyte2[k];\n      point++;\n    }\n    for(uint8 k = 0; k < strbyte3.length;k++){\n      str[point] = strbyte3[k];\n      point++;\n    }\n    return string(str);\n  }\n}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820aff0ec1e8ef9c4f22ade5c6bdef3be7feed96bce810e0abda2934b42eb72bbb80029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820aff0ec1e8ef9c4f22ade5c6bdef3be7feed96bce810e0abda2934b42eb72bbb80029",
+  "sourceMap": "25:1383:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:1383:0;;;;;;;",
+  "deployedSourceMap": "25:1383:0:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\n\ncontract StrConnect {\n\n  function twoStrConnect(string memory _str1, string memory _str2) internal view returns(string memory){\n    string memory str1 = _str1;\n    string memory str2 = _str2;\n    bytes memory strbyte1 = bytes(str1);\n    bytes memory strbyte2 = bytes(str2);\n\n    bytes memory str = new bytes(strbyte1.length + strbyte2.length);\n\n    uint8 point = 0;\n    for(uint8 j = 0; j < strbyte1.length;j++){\n      str[point] = strbyte1[j];\n      point++;\n    }\n    for(uint8 k = 0; k < strbyte2.length;k++){\n      str[point] = strbyte2[k];\n      point++;\n    }\n    return string(str);\n  }\n\n  function threeStrConnect(string memory _str1, string memory _str2, string memory _str3) internal view returns(string memory) {\n    string memory str1 = _str1;\n    string memory str2 = _str2;\n    string memory str3 = _str3;\n    bytes memory strbyte1 = bytes(str1);\n    bytes memory strbyte2 = bytes(str2);\n    bytes memory strbyte3 = bytes(str3);\n\n    bytes memory str = new bytes(strbyte1.length + strbyte2.length + strbyte3.length);\n\n    uint8 point = 0;\n    for(uint8 j = 0; j < strbyte1.length;j++){\n      str[point] = strbyte1[j];\n      point++;\n    }\n    for(uint8 k = 0; k < strbyte2.length;k++){\n      str[point] = strbyte2[k];\n      point++;\n    }\n    for(uint8 k = 0; k < strbyte3.length;k++){\n      str[point] = strbyte3[k];\n      point++;\n    }\n    return string(str);\n  }\n\n}",
   "sourcePath": "/Users/sugimura/ethereum-contract/contracts/StrConnect.sol",
   "ast": {
     "absolutePath": "/Users/sugimura/ethereum-contract/contracts/StrConnect.sol",
@@ -3040,10 +3040,10 @@
           }
         ],
         "scope": 236,
-        "src": "25:1382:0"
+        "src": "25:1383:0"
       }
     ],
-    "src": "0:1407:0"
+    "src": "0:1408:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/sugimura/ethereum-contract/contracts/StrConnect.sol",
@@ -6078,10 +6078,10 @@
           }
         ],
         "scope": 236,
-        "src": "25:1382:0"
+        "src": "25:1383:0"
       }
     ],
-    "src": "0:1407:0"
+    "src": "0:1408:0"
   },
   "compiler": {
     "name": "solc",
@@ -6089,7 +6089,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0",
-  "updatedAt": "2019-01-08T14:23:12.805Z",
+  "updatedAt": "2019-01-08T15:28:57.674Z",
   "devdoc": {
     "methods": {}
   },
