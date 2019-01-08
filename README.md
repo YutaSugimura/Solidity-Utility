@@ -8,5 +8,16 @@
 ### import
 
 `
-import "github.com/YutaSugimura/Solidity-Utility/contracts/xxx.sol"
+import "github.com/YutaSugimura/Solidity-Utility/contracts/xxx.sol";
 `
+
+## TypeConversion.sol
+
+### uintToBytes
+#### uint256 => bytes32
+
+### bytesToString
+#### bytes => String
+
+### uintToStrings
+##### uint256 => String

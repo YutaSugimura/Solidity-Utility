@@ -29,9 +29,7 @@ contract TypeConversion {
   }
 
   function uintToStrings(uint _uint) view internal returns(string memory) {
-    bytes memory b = abi.encodePacked(uintToBytes(_uint));
-    string memory c = bytesToString(b);
-        
-    return c;
+    bytes memory strBytes = abi.encodePacked(uintToBytes(_uint));
+    return bytesToString(strBytes);
   }
 }
